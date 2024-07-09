@@ -1,0 +1,84 @@
+/* 
+    Colores basicos:
+    - Negro: #323232
+    - Blanco: #FFFFFF
+    - Rojo: #E03E52
+    - Amarillo: #FFC600
+*/
+
+/* Asegurar que el padding y borde se incluyan en el cálculo del ancho */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Especificidad: 010*/
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #323232;
+    color: #FFFFFF;
+    padding: 0.3em 1%; /* Usar porcentaje para el padding horizontal */
+    overflow: hidden; /* Evitar desbordamiento horizontal */
+}
+
+img { 
+    max-width: 5%;
+    cursor: pointer;
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 1em; /* Usar em para el margen horizontal */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5% 1%;
+    
+}
+
+li:hover {
+    color: #FFC600;
+    transition: .3s ease color;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 0.2em 0.5em; /* Usar em para el padding */
+    border-radius: 2em; /* Usar em para el border-radius */
+    margin-right: 1em; /* Añadir espacio a la derecha del buscador */
+}
+
+.search_box input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #323232;
+    width: 10em; /* Usar em para el ancho del input */
+}
+
+.search_box input::placeholder {
+    color: #323232;
+}
+
+.search_icon {
+    width: 1.5em; /* Ajustar el tamaño del ícono de búsqueda con em */
+    cursor: pointer;
+    margin-left: 0.5em; /* Ajustar margen con em */
+    max-width: 12.5%;
+}
+
+.perfil_icon {
+    margin-left: 1em; /* Añadir espacio a la izquierda de la imagen del perfil */
+    width: 3em; /* Ajustar tamaño del icono del perfil con em */
+}
